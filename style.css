@@ -5,8 +5,11 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(227, 243, 243);
+    font-family:'Courier New', Courier, monospace;
 }
-
+*.{
+    font-family: 'Courier New', Courier, monospace;
+}
 .header {
     display:flex;
     justify-content: center;
@@ -93,5 +96,6 @@
     flex:1,1,auto;
     height: 500px;
     background-color: rgb(227, 243, 243);
+    font-size: 75pt;
 }
    

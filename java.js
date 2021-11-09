@@ -65,29 +65,29 @@ return compOut;
 
 function displayCompOut (compOut) {
     if (compOut == "rock") {
-        document.querySelector('#compOutImage').src='compRock.gif';
+        document.querySelector('#compOutImage').src='rock.webp';
         document.querySelector('#compOutImage').style.cssText = 'height:150px; width:150px; margin:50px; border:black;border-radius:15px; border-radius:15px; border:solid; object-fit:cover; margin-bottom:-15px;';
     }   else if (compOut == "paper") {
-                document.querySelector('#compOutImage').src='compPaper.gif';
+                document.querySelector('#compOutImage').src='paper.webp';
                 document.querySelector('#compOutImage').style.cssText = 'height:150px; width:150px; margin:50px; border-radius:15px; border:solid; object-fit:cover; margin-bottom:-15px;';
                 
     }
        else if (compOut == "scissors") {
-                document.querySelector('#compOutImage').src='compScissors.gif'
+                document.querySelector('#compOutImage').src='scissors.png'
                 document.querySelector('#compOutImage').style.cssText ='height:150px; width:150px; margin:50px; border-radius:15px; border:solid; object-fit:cover;  margin-bottom:-15px;';
     }
 }
 
 function displayPlayOut (playIn) {
     if (playIn == "rock") {
-        document.querySelector('#playOutImage').src='compRock.gif';
+        document.querySelector('#playOutImage').src='rock.webp';
         document.querySelector('#playOutImage').style.cssText ='height:150px; width:150px; margin:50px; border-radius:15px; border:solid; object-fit:cover;margin-bottom:-15px;'
     }   else if (playIn == "paper") {
-                document.querySelector('#playOutImage').src='compPaper.gif';
+                document.querySelector('#playOutImage').src='paper.webp';
                 document.querySelector('#playOutImage').style.cssText ='height:150px; width:150px; margin:50px; border-radius:15px; border:solid; object-fit:cover;margin-bottom:-15px;';
     }
        else if (playIn == "scissors") {
-                document.querySelector('#playOutImage').src='compScissors.gif';
+                document.querySelector('#playOutImage').src='scissors.png';
                 document.querySelector('#playOutImage').style.cssText ='height:150px; width:150px; margin:50px; border-radius:15px; border:solid; object-fit:cover;margin-bottom:-15px;';
     }
 }
@@ -232,41 +232,13 @@ else if (playIn == compOut) {
         }
         return result;
 }
-console.log("score" + score);
-console.log("turns" + turns);
+
 }
 
 
-//this function plays 5 rounds logs the scores and declares a winner in the end//
 
-function game() {
-    let score = 0;
-playRound();
-    if (result.indexOf("win")>1) {score = score +1;}
-    else if (result.indexOf ("lose")>1) {score = score -1}
-    console.log (score)
-playRound();
-    if (result.indexOf("win")>1) {score = score +1;}
-    else if (result.indexOf ("lose")>1) {score = score -1}
-    console.log (score)
-playRound();
-    if (result.indexOf("win")>1) {score = score +1;}
-    else if (result.indexOf ("lose")>1) {score = score -1}
-    console.log (score)
-playRound();
-    if (result.indexOf("win")>1) {score = score +1;}
-    else if (result.indexOf ("lose")>1) {score = score -1}
-    console.log (score)
-playRound();
-    if (result.indexOf("win")>1) {score = score +1;}
-    else if (result.indexOf ("lose")>1) {score = score -1}
-    console.log (score)
-if (score > 0) {console.log ("You won!")}
-    else if (score == 0) {console.log ("It's a draw!")}
-    else {console.log("You Lose!")}
-}
 
-endResult();
+
 
 
 
